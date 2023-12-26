@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Application Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: #e0d5d5;
+            color: #050505;
+        }
+
+        .carousel-control.right,
+        .carousel-control.left {
+            background-color: #e0d5d5;
+            color: #e0d5d5;
+        }
+
+        .carousel-indicators li {
+            background-color: #e0d5d5;
+            border-color: #e0d5d5;
+        }
+
+        .carousel-indicators li.active {
+            background-color: #e0d5d5;
+        }
+
+        /* Chatbot Icon Styles */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        #chatbot-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>PP Bank</h1>
+        <h1>{{ prediction }}</h1>
+    </div>
+
+    <div class="text-center">
+        <h2>What our customers say</h2>
+    </div>
+
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>"This company is the best. I am so happy with the result!"<br><span>Pankaj Patil</span></h4>
+            </div>
+            <div class="item">
+                <h4>"One word... WOW!!"<br><span>Ganesh Baravkar</span></h4>
+            </div>
+            <div class="item">
+                <h4>"Could I... BE any more happy with this company?"<br><span>Aditya Pawar</span></h4>
+            </div>
+        </div>
+        <br>
+        <br>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+        <img src="/static/chatbot.png" alt="Chatbot">
+    </div>
+
+    <script>
+        function toggleChatbot() {
+            var chatbotWindow = window.open('', 'Chatbot Window', 'width=400,height=500');
+
+            if (chatbotWindow.location.href === 'about:blank') {
+                chatbotWindow.document.write('<html><head><title>My Bot</title></head><body><iframe src="https://webchat.botframework.com/embed/LoanBotpp-bot?s=zqdI3-eUpCA.1d5ED_w0KNu40mWJWqAKJLLh7xUaaNJeWMESSq5J6Mo" style="min-width: 400px; width: 100%; min-height: 500px;"></iframe></body></html>');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan Application Prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .jumbotron {
+            background-color: #17a2b8;
+            color: #ffffff;
+            padding: 40px;
+            margin-bottom: 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 22px);
+        }
+
+        .input-group-btn {
+            margin-top: 10px;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            color: #fff;
+            border: 1px solid #dc3545;
+        }
+
+        /* Chatbot Icon Styles */
+        #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        #chatbot-icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>PP Bank</h1>
+        <p>Loan Application Form</p>
+    </div>
+
+    <div class="container">
+        <form class="form-inline" action="/result" method="POST">
+            <label for="Gender">Gender</label>
+            <select id="Gender" name="Gender" required="required">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+
+            <label for="Married">Married</label>
+            <select id="Married" name="Married" required="required">
+                <option value="0">NO</option>
+                <option value="1">YES</option>
+            </select>
+
+            <label for="Dependents">Dependents</label>
+            <select id="Dependents" name="Dependents" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3+</option>
+            </select>
+
+            <label for="Education">Education</label>
+            <select id="Education" name="Education" required="required">
+                <option value="0">Not Graduate</option>
+                <option value="1">Graduate</option>
+            </select>
+
+            <label for="Self_Employed">Self_Employed</label>
+            <select id="Self_Employed" name="Self_Employed" required="required">
+                <option value="0">NO</option>
+                <option value="1">YES</option>
+            </select>
+
+            <label for="ApplicantIncome">ApplicantIncome</label>
+            <select id="ApplicantIncome" name="ApplicantIncome" required="required">
+                <option value="0">0 to 5000</option>
+                <option value="1">5000 to 10000</option>
+                <option value="2">Above 10000</option>
+            </select>
+
+            <label for="CoapplicantIncome">Any CoapplicantIncome</label>
+            <select id="CoapplicantIncome" name="CoapplicantIncome" required="required">
+                <option value="0">NO</option>
+                <option value="1">YES</option>
+            </select>
+
+            <label for="LoanAmount">Expecting Loan Amount</label>
+            <input type="number" id="LoanAmount" name="LoanAmount" placeholder="Btw 0 to 500" required="required">
+
+            <label for="Loan_Amount_Term">Loan_Amount_Term </label>
+            <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" placeholder="In Days" required="required">
+
+            <label for="Credit_History">Credit_History</label>
+            <select id="Credit_History" name="Credit_History" required="required">
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+
+            <label for="Property_Area">Property_Area</label>
+            <select id="Property_Area" name="Property_Area" required="required">
+                <option value="0">Urban</option>
+                <option value="1">Rural</option>
+                <option value="2">Semi Urban</option>
+            </select>
+
+            <div class="input-group-btn">
+                <input type="submit" class="btn btn-danger" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" onclick="toggleChatbot()">
+        <img src="/static/chatbot.png" alt="Chatbot">
+    </div>
+
+    <script>
+        function toggleChatbot() {
+            var chatbotWindow = window.open('', 'Chatbot Window', 'width=400,height=500');
+
+            if (chatbotWindow.location.href === 'about:blank') {
+                chatbotWindow.document.write('<html><head><title>My Bot</title></head><body><iframe src="https://webchat.botframework.com/embed/LoanBotpp-bot?s=zqdI3-eUpCA.1d5ED_w0KNu40mWJWqAKJLLh7xUaaNJeWMESSq5J6Mo" style="min-width: 400px; width: 100%; min-height: 500px;"></iframe></body></html>');
+            }
+        }
+    </script>
+</body>
+</html>
