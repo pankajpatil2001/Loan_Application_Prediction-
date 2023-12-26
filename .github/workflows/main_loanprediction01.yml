@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'loanprediction01'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1C5AA97A07024C41BEAF3170A017345B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6FE5356998E5423E85CBC2C464C2D85D }}
