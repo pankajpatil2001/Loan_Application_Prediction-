@@ -1,4 +1,4 @@
-Hi<h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
+<h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
 <h2>Project Title: Loan Application Approval</h2><b><a href="https://loanprediction01.azurewebsites.net/">Loan Application Approval</b></a>
 <br>
 <h2>Project Details</h2>
@@ -50,15 +50,17 @@ Looking into the future, the project has promising avenues for growth. Integrati
 <h3>Azure App Service</h3>
 <b>Description:</b><p align="justify">
 Azure App Service furnishes a scalable and dependable hosting setting for the Loan Application Approval, guaranteeing smooth deployment and uninterrupted availability to enhance the user experience.</p>
-<img src="https://github.com/pratik3155/TextAnalyzer/blob/main/Screenshots/app-service.png" alt="azure-app-service"></img><br>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/App_Service.png" alt="azure-app-service"></img><br>
 
 <h3>Azure Storage Service</h3>
 <b>Description:</b><p align="justify">The project utilizes Azure Storage Service to securely store the pickle file in a Blob container, ensuring persistence and accessibility for loan application processing.</p>
-<img src="<Replace with Your Image URL>" alt="azure-storage-service"></img><br>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Storage.png" alt="azure-storage-service"></img><br>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Storage_Container.png"></img><br>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Container_Joblibstore.png"></img><br>
 
 <h3>Azure Language Studio (Azure AI QnAMaker Service)</h3>
 <b>Description:</b><p align="justify">The Loan Application Approval relies on Azure Language Studio for implementing a chatbot, enhancing user interactions and providing knowledge to user queries on the web app.</p>
-<img src="<Replace with Your Image URL>" alt="azure-ai-qnamaker-service"></img><br>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/AI_Bot.png" alt="azure-ai-qnamaker-service"></img><br>
 
 <h3>Working Live Project Display</h3>
 <b>Description:</b><p align="justify">I am providing the enclosed screenshot of the finalized operational website for your reference and review purposes.</p>
