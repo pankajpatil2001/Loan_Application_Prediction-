@@ -64,11 +64,13 @@ Azure App Service furnishes a scalable and dependable hosting setting for the Lo
 
 <h3>Working Live Project Display</h3>
 <b>Description:</b><p align="justify">I am providing the enclosed screenshot of the finalized operational website for your reference and review purposes.</p>
-<img src="https://github.com/pratik3155/TextAnalyzer/blob/main/Screenshots/TextAnalyzer.png" alt="final-project-demo"></img>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Live%20Project.png"></img>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Live_result%20.png"></img>
+
 
 <h3>Resource Visualizer</h3>
 <b>Description:</b><p align="justify">Attached herewith is the resource visualizer screenshot, presenting an overview of the utilized resources for reference and documentation purposes.</p>
-<img src="https://github.com/pratik3155/TextAnalyzer/blob/main/Screenshots/Resource%20visualizer.png" alt="resource-display"></img>
+<img src="https://github.com/pankajpatil2001/Loan_Application_Approval/blob/main/static/Resource%20Visualizer.png"></img>
 
 <h2>Final Project Statement</h2>
 <p align="justify">
