@@ -9,7 +9,7 @@
 <h2>Azure Services Used</h2>
 <h3>Core Azure Services:</h3>
 1. Azure App Service: Deployed the Python backend environment for loan application processing.<br>
-2. Azure Storage Service: Used to store the pickle file in a Blob container for model persistence.<br>
+2. Azure Storage Service: Used to store the csv file in a Blob container for model persistence.<br>
 <h3>Azure AI Service</h3> 
 1. Azure Language Studio (Azure AI QnAMaker Service): Implemented a chatbot for user interactions and knowledge provision on the web app.
 
