@@ -4,7 +4,7 @@
 <h2>Project Details</h2>
 <b>Project Demo URL :</br> https://loanprediction01.azurewebsites.net/ <br>
 <b>Demo Video URL :<br> https://drive.google.com/file/d/1F8xT02qrc-YOzmuojUzaRX6IicpC8wJT/view?usp=sharing <br>
-<b>Github Repository URL :</br> https://github.com/pankajpatil2001/Loan_application_predictionpp <br>
+<b>Github Repository URL :<br> https://github.com/pankajpatil2001/Loan_application_predictionpp <br>
 <b>Industry :</b> Finance Technology<br>
 <h2>Azure Services Used</h2>
 <h3>Core Azure Services:</h3>
