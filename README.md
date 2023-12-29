@@ -64,7 +64,7 @@ Azure App Service furnishes a scalable and dependable hosting setting for the Lo
 
 <h3>Working Live Project Display</h3>
 <b>Description:</b><p align="justify">I am providing the enclosed screenshot of the finalized operational website for your reference and review purposes.</p>
-<img src="static/Project result.png"></img>
+<img src="static/Live Project.png"></img>
 <img src="static/Live_result .png"></img>
 
 
